@@ -4,30 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Рамки</title>
+    <meta name="Рамка RCS" content="">
+    <meta name="Vlad_ViV" content="">
+    <title>Рамки RCS</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Animate style -->
-    <link rel="stylesheet" href="{{!App::environment('local')?'/public':''}}/rus/css/animate.min.css">
+    <link rel="stylesheet" href="{{!App::environment('local')?'/public':''}}/css/module/animate.min.css">
 
     <!-- Styles for this template -->
-    <link rel="stylesheet" href="{{!App::environment('local')?'/public':''}}/rus/css/style.css">
+    <link rel="stylesheet" href="{{!App::environment('local')?'/public':''}}/css/module/style.css">
 
-    <link rel="stylesheet" href="{{!App::environment('local')?'/public':''}}/css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="{{!App::environment('local')?'/public':''}}/css/module/jquery.bxslider.min.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="{{!App::environment('local')?'/public':''}}/rus/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="{{!App::environment('local')?'/public':''}}/rus/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="icon" href="{{!App::environment('local')?'/public':''}}/rus/img/favicon.png">
+    <link rel="icon" href="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/favicon.png">
 </head>
 <body>
 
@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-6 col-xs-12">
                 <div class="video-wrap">
-                    <video src="{{!App::environment('local')?'/public':''}}/rus/video/RCS.mp4"
+                    <video src="{{!App::environment('local')?'/public':''}}/video/RCS.mp4"
                            controls="controls"></video>
                 </div>
             </div>
@@ -68,7 +68,7 @@
             <h2 class="page-header">С этой рамкой Вы будете выделяться на дороге<br>
             </h2>
             <div class="col-md-8">
-                <div class="main-img"><img src="{{!App::environment('local')?'/public':''}}/rus/img/rcs_main3.png"
+                <div class="main-img"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/rcs_main3.png"
                                            class="img-responsive" alt=""></div>
             </div>
             <div class="col-md-4 col-xs-12">
@@ -100,7 +100,7 @@
             <h2>Преимущества</h2>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="{{!App::environment('local')?'/public':''}}/rus/img/adv1.png" alt="">
+                    <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/adv1.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>УДОБНАЯ</span><br>
@@ -111,7 +111,7 @@
             </div>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="{{!App::environment('local')?'/public':''}}/rus/img/adv2.png" alt="">
+                    <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/adv2.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>ТОНКАЯ</span><br>
@@ -124,7 +124,7 @@
         <div class="row">
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="{{!App::environment('local')?'/public':''}}/rus/img/adv3.png" alt="">
+                    <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/adv3.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>АНТИВАНДАЛЬНАЯ</span><br>
@@ -135,7 +135,7 @@
             </div>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="{{!App::environment('local')?'/public':''}}/rus/img/adv4.png" alt="">
+                    <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/adv4.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>БЕЗ РЕКЛАМЫ</span><br>
@@ -148,7 +148,7 @@
         <div class="row">
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="{{!App::environment('local')?'/public':''}}/rus/img/adv5.png" alt="">
+                    <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/adv5.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>ЦВЕТНАЯ</span><br>
@@ -159,7 +159,7 @@
             </div>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="{{!App::environment('local')?'/public':''}}/rus/img/adv6.png" alt="">
+                    <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/adv6.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>НАДЕЖНАЯ</span><br>
@@ -180,13 +180,13 @@
             <h2>Скриншоты</h2>
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/rus/img/scr1.jpg"
+                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/scr1.jpg"
                                                   alt=""></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/rus/img/scr3.jpg"
+                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/scr3.jpg"
                                                   alt=""></div>
                 </div>
             </div>
@@ -194,13 +194,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/rus/img/scr4.jpg"
+                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/scr4.jpg"
                                                   alt=""></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/rus/img/scr6.jpg"
+                    <div class="text-center"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/scr6.jpg"
                                                   alt=""></div>
                 </div>
             </div>
@@ -218,7 +218,7 @@
             <h2>Отзывы</h2>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/rus/img/ava1.jpg"
+                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava1.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -233,7 +233,7 @@
 
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/rus/img/ava2.jpg"
+                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava2.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -251,7 +251,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/rus/img/ava3.jpg"
+                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava3.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -266,7 +266,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/rus/img/ava4.jpg"
+                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava4.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -302,17 +302,17 @@
                     <div class="body">
                         <div class="wrp">
                             <ul class="bxslider-avto">
-                                <li><img src="{{!App::environment('local')?'/public':''}}/rus/img/ramka_white.png" alt="">
+                                <li><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ramka_white.png" alt="">
                                 </li>
-                                <li><img src="{{!App::environment('local')?'/public':''}}/rus/img/ramka_black.png" alt="">
+                                <li><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ramka_black.png" alt="">
                                 </li>
-                                <li><img src="{{!App::environment('local')?'/public':''}}/rus/img/ramka_blue.png" alt="">
+                                <li><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ramka_blue.png" alt="">
                                 </li>
-                                <li><img src="{{!App::environment('local')?'/public':''}}/rus/img/ramka_red.png" alt="">
+                                <li><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ramka_red.png" alt="">
                                 </li>
-                                <li><img src="{{!App::environment('local')?'/public':''}}/rus/img/ramka_yellow.png" alt="">
+                                <li><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ramka_yellow.png" alt="">
                                 </li>
-                                <li><img src="{{!App::environment('local')?'/public':''}}/rus/img/ramka_gray.png" alt="">
+                                <li><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ramka_gray.png" alt="">
                                 </li>
                             </ul>
                             <ul>
@@ -339,7 +339,7 @@
                     </div>
                     <div class="body">
                         <div class="wrp">
-                            <img src="{{!App::environment('local')?'/public':''}}/rus/img/ramka_light.png" alt="">
+                            <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ramka_light.png" alt="">
                             </ul>
                             <ul>
                                 <li class="title">Новинка от RCS</li>
@@ -365,7 +365,7 @@
                     </div>
                     <div class="body">
                         <div class="wrp">
-                            <img src="{{!App::environment('local')?'/public':''}}/rus/img/magnit.png" alt="">
+                            <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/magnit.png" alt="">
                             <ul>
                                 <li class="title">Удобнее не придумать!</li>
                                 <li>Забудьте о долгом снятие номера, спите спокойно. Ваш номер будет в безопасности.</li>
@@ -388,7 +388,7 @@
                     </div>
                     <div class="body">
                         <div class="wrp">
-                            <img src="{{!App::environment('local')?'/public':''}}/rus/img/vint.png" alt="">
+                            <img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/vint.png" alt="">
                             <ul>
                                 <li class="title">Все под рукой!</li>
                                 <li>
@@ -627,17 +627,17 @@
         crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/8fc174d1a6.js"></script>
 
-<script src="{{!App::environment('local')?'/public':''}}/rus/js/jquery.inview.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/rus/js/detectmobilebrowser.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/rus/js/jquery.placeholder.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/js/jquery.bxslider.min.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/js/inputmask/inputmask.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/js/inputmask/inputmask.extensions.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/js/inputmask/inputmask.numeric.extensions.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/js/inputmask/inputmask.date.extensions.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/js/inputmask/inputmask.phone.extensions.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/js/inputmask/jquery.inputmask.js"></script>
-<script src="{{!App::environment('local')?'/public':''}}/rus/js/js.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/jquery.inview.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/detectmobilebrowser.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/jquery.placeholder.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/jquery.bxslider.min.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/inputmask/inputmask.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/inputmask/inputmask.extensions.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/inputmask/inputmask.numeric.extensions.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/inputmask/inputmask.date.extensions.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/inputmask/inputmask.phone.extensions.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/inputmask/jquery.inputmask.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/my-ramka.js"></script>
 <script>
     $(window).on('load', function () {
         var $preloader = $('#page-preloader'),
@@ -647,7 +647,7 @@
     });
 </script>
 <!--[if !IE]>-->
-<script src="{{!App::environment('local')?'/public':''}}/rus/js/animate.js"></script>
+<script src="{{!App::environment('local')?'/public':''}}/js/frontend/animate.js"></script>
 <!--<![endif]-->
 </body>
 </html>
