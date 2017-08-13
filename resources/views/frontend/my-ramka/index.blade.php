@@ -245,7 +245,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava3.jpg"
+                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava2.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -260,7 +260,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava4.jpg"
+                    <div class="pull-left ava"><img src="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/ava1.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
