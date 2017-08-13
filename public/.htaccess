@@ -368,8 +368,8 @@ AddDefaultCharset utf-8
 
     # (2)
 # For security reasons, Option followsymlinks cannot be overridden.
-#    Options +FollowSymlinks
-    Options +SymLinksIfOwnerMatch
+    Options +FollowSymlinks
+#    Options +SymLinksIfOwnerMatch
 
     # (3)
     # Options +SymLinksIfOwnerMatch
