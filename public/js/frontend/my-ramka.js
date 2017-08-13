@@ -16,7 +16,6 @@ jQuery(document).ready(function($) {
         var recipient = button.data('whatever');
         var modal = $(this);
         var count = $('#count');
-        $('.recipient').val(recipient);
 
         if (recipient == 'ramka') {
             $('.color').show();
@@ -81,6 +80,9 @@ jQuery(document).ready(function($) {
             });
             modal.find('.price').text('1790');
         }
+
+        $('.recipient').val(recipient);
+
     });
 
     $('.phone-mask').inputmask('+7 (999) 999-99-99');

@@ -156,6 +156,8 @@ return [
             'password_confirmation'     => 'Подтверждение пароля',
             'phone'                     => 'Телефон',
             'message'                   => 'Ваш вопрос',
+            'first_name'                => 'Имя',
+            'last_name'                   => 'Фамилия',
         ],
     ],
 ];

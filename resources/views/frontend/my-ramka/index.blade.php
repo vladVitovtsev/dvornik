@@ -448,7 +448,7 @@
 <!-- //buy it now -->
 
 <!-- ***SUBSCRIBE*** -->
-<div id="subscribe" class="subscribe section row">
+{{--<div id="subscribe" class="subscribe section row">
     <div class="container">
         <!-- row -->
         <div class="text-center row">
@@ -466,7 +466,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>--}}
 <!-- //subscribe -->
 
 <!-- ***CONTACTS*** -->
@@ -540,16 +540,16 @@
                     </div>
                     <div class="count">
                         <div class="form-group">
-                            <label for="count" class="col-sm-2 control-label">Количество</label>
-                            <div class="col-sm-10">
+                            <label for="count" class="col-sm-4 control-label">Количество</label>
+                            <div class="col-sm-6">
                                 <input type="number" class="form-control" name="count" id="count" placeholder="Количество" value="1">
                             </div>
                         </div>
                     </div>
                     <div class="color" style="display: none">
                         <div class="form-group">
-                            <label for="color" class="col-sm-2 control-label">Цвет</label>
-                            <div class="col-sm-10">
+                            <label for="color" class="col-sm-4 control-label">Цвет</label>
+                            <div class="col-sm-6">
                                 <select name="color" id="color" class="form-control" required>
                                     <option value="black">Черная</option>
                                     <option value="white">Белая</option>
@@ -562,26 +562,53 @@
                         </div>
                     </div>
                     @if(!$logged_in_user)
-                        <div class="fio">
+                        <div class="form-group">
+                            {{ Form::label('first_name', trans('validation.attributes.frontend.first_name'),
+                            ['class' => 'col-md-4 control-label']) }}
+                            <div class="col-md-6">
+                                {{ Form::text('first_name', null,
+                                ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.frontend.first_name')]) }}
+                            </div><!--col-md-6-->
+                        </div><!--form-group-->
+
+                        <div class="form-group">
+                            {{ Form::label('last_name', trans('validation.attributes.frontend.last_name'),
+                            ['class' => 'col-md-4 control-label']) }}
+                            <div class="col-md-6">
+                                {{ Form::text('last_name', null,
+                                ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.last_name')]) }}
+                            </div><!--col-md-6-->
+                        </div><!--form-group-->
+
+                        <div class="form-group">
+                            {{ Form::label('email', trans('validation.attributes.frontend.email'), ['class' => 'col-md-4 control-label']) }}
+                            <div class="col-md-6">
+                                {{ Form::email('email', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.email')]) }}
+                            </div><!--col-md-6-->
+                        </div><!--form-group-->
+
+                        <div class="form-group">
+                            {{ Form::label('password', trans('validation.attributes.frontend.password'), ['class' => 'col-md-4 control-label']) }}
+                            <div class="col-md-6">
+                                {{ Form::password('password', ['class' => 'form-control', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.password')]) }}
+                            </div><!--col-md-6-->
+                        </div><!--form-group-->
+
+                        <div class="form-group">
+                            {{ Form::label('password_confirmation', trans('validation.attributes.frontend.password_confirmation'), ['class' => 'col-md-4 control-label']) }}
+                            <div class="col-md-6">
+                                {{ Form::password('password_confirmation', ['class' => 'form-control', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.password_confirmation')]) }}
+                            </div><!--col-md-6-->
+                        </div><!--form-group-->
+
+                        @if (config('access.captcha.registration'))
                             <div class="form-group">
-                                <label for="lastName" class="col-sm-2 control-label">Фамилия</label>
-                                <div class="col-sm-10">
-                                    <input class="form-control" name="lastName" id="lastName" placeholder="Фамилия" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="firstName" class="col-sm-2 control-label">Имя</label>
-                                <div class="col-sm-10">
-                                    <input class="form-control" name="firstName" id="firstName" placeholder="Имя" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" class="col-sm-2 control-label">Телефон</label>
-                                <div class="col-sm-10">
-                                    <input class="form-control phone-mask" name="phone" id="phone" placeholder="Телефон" required>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="col-md-6 col-md-offset-4">
+                                    {!! Form::captcha() !!}
+                                    {{ Form::hidden('captcha_status', 'true') }}
+                                </div><!--col-md-6-->
+                            </div><!--form-group-->
+                        @endif
                     @else
                         <input type="hidden" name="id" value="{{ $logged_in_user->id }}">
                     @endif
