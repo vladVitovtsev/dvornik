@@ -93,7 +93,7 @@
             <h2>Преимущества</h2>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="/img/frontend/my-ramka/adv1.png" alt="">
+                    <img src="public/img/frontend/my-ramka/adv1.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>УДОБНАЯ</span><br>
