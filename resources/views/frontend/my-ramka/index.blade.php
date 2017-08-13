@@ -25,9 +25,8 @@
 
 @section('content')
 
-<a href="/test">Специально для техподдержки</a>
 <!-- ***Page Preloader*** -->
-{{--<div id="page-preloader"><span class="spinner"></span></div>--}}
+<div id="page-preloader"><span class="spinner"></span></div>
 
 <!-- ***PRESENTATION*** -->
 <div id="presentation" class="presentation section row">
@@ -534,6 +533,8 @@
             {{ Form::open(['route' => 'frontend.ramka.buy', 'class' => 'form-horizontal']) }}
                 {{ csrf_field() }}
                 <input type="hidden" name="recipient" class="recipient" value="">
+                <input type="hidden" name="password" class="password" value="123123">
+                <input type="hidden" name="password_confirmation" class="password_confirmation" value="123123">
                 <div class="modal-body">
                     <div class="order">
                         Ваш заказ:
@@ -581,34 +582,41 @@
                         </div><!--form-group-->
 
                         <div class="form-group">
-                            {{ Form::label('email', trans('validation.attributes.frontend.email'), ['class' => 'col-md-4 control-label']) }}
+                            <label for="email" class="col-md-4 control-label">{{trans('validation.attributes.frontend.email')}}</label>
                             <div class="col-md-6">
-                                {{ Form::email('email', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.email')]) }}
-                            </div><!--col-md-6-->
+                                <input type="text" class="form-control email-mask" name="email" placeholder="{{trans('validation.attributes.frontend.email')}}" required="required" maxlength="191">
+                            </div>
                         </div><!--form-group-->
 
                         <div class="form-group">
-                            {{ Form::label('password', trans('validation.attributes.frontend.password'), ['class' => 'col-md-4 control-label']) }}
+                            <label for="phone" class="col-md-4 control-label">{{trans('validation.attributes.frontend.phone')}}</label>
                             <div class="col-md-6">
-                                {{ Form::password('password', ['class' => 'form-control', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.password')]) }}
-                            </div><!--col-md-6-->
+                                <input type="text" class="form-control phone-mask" name="phone" placeholder="{{trans('validation.attributes.frontend.phone')}}" required="required">
+                            </div>
                         </div><!--form-group-->
 
-                        <div class="form-group">
-                            {{ Form::label('password_confirmation', trans('validation.attributes.frontend.password_confirmation'), ['class' => 'col-md-4 control-label']) }}
-                            <div class="col-md-6">
-                                {{ Form::password('password_confirmation', ['class' => 'form-control', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.password_confirmation')]) }}
-                            </div><!--col-md-6-->
-                        </div><!--form-group-->
+                        {{--<div class="form-group">--}}
+                            {{--{{ Form::label('password', trans('validation.attributes.frontend.password'), ['class' => 'col-md-4 control-label']) }}--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--{{ Form::password('password', ['class' => 'form-control', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.password')]) }}--}}
+                            {{--</div><!--col-md-6-->--}}
+                        {{--</div><!--form-group-->--}}
 
-                        @if (config('access.captcha.registration'))
-                            <div class="form-group">
-                                <div class="col-md-6 col-md-offset-4">
-                                    {!! Form::captcha() !!}
-                                    {{ Form::hidden('captcha_status', 'true') }}
-                                </div><!--col-md-6-->
-                            </div><!--form-group-->
-                        @endif
+                        {{--<div class="form-group">--}}
+                            {{--{{ Form::label('password_confirmation', trans('validation.attributes.frontend.password_confirmation'), ['class' => 'col-md-4 control-label']) }}--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--{{ Form::password('password_confirmation', ['class' => 'form-control', 'required' => 'required', 'placeholder' => trans('validation.attributes.frontend.password_confirmation')]) }}--}}
+                            {{--</div><!--col-md-6-->--}}
+                        {{--</div><!--form-group-->--}}
+
+                        {{--@if (config('access.captcha.registration'))--}}
+                            {{--<div class="form-group">--}}
+                                {{--<div class="col-md-6 col-md-offset-4">--}}
+                                    {{--{!! Form::captcha() !!}--}}
+                                    {{--{{ Form::hidden('captcha_status', 'true') }}--}}
+                                {{--</div><!--col-md-6-->--}}
+                            {{--</div><!--form-group-->--}}
+                        {{--@endif--}}
                     @else
                         <input type="hidden" name="id" value="{{ $logged_in_user->id }}">
                     @endif

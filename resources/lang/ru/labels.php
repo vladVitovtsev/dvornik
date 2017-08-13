@@ -42,6 +42,8 @@ return [
                 'no_roles'              => 'Невозможно присвоить роль.',
                 'permissions'           => 'Разрешения',
                 'table'                 => [
+                    'last_name'         => 'Фамилия',
+                    'first_name'        => 'Имя',
                     'confirmed'         => 'Подтверждён',
                     'created'           => 'Создан',
                     'email'             => 'E-mail',
@@ -51,7 +53,7 @@ return [
                     'no_deactivated'    => 'Нет заблокированных пользователей',
                     'no_deleted'        => 'Нет удаленных пользователей',
                     'roles'             => 'Роль',
-                    'social' => 'Social',
+                    'social'            => 'Social',
                     'total'             => 'пользователей всего|всего пользователей',
                 ],
                 'tabs'                  => [

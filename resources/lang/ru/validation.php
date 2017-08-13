@@ -134,6 +134,8 @@ return [
                     'sort'                      => 'Позиция',
                 ],
                 'users'         => [
+                    'first_name'                => 'Имя',
+                    'last_name'                 => 'Фамилия',
                     'active'                    => 'Активный',
                     'associated_roles'          => 'Роли',
                     'confirmed'                 => 'Подтверждён',

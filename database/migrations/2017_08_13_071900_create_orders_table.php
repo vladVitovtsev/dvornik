@@ -13,14 +13,15 @@ class CreateOrdersTable extends Migration
      */
     public function up()
     {
-//        Schema::create('orders', function (Blueprint $table) {
-//            $table->increments('id');
-//            $table->integer('user_id')->unsigned();
-//            $table->foreign('user_id')->references('id')->on('users');
-//            $table->string('products');
-//
-//            $table->timestamps();
-//        });
+        Schema::create('orders', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->string('products');
+            $table->string('color')->nullable();
+            $table->integer('count')->nullable();
+            $table->timestamps();
+        });
     }
 
     /**

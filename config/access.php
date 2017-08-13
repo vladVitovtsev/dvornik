@@ -58,7 +58,7 @@ return [
         /*
          * Whether or not the user has to confirm their email when signing up
          */
-        'confirm_email' => true,
+        'confirm_email' => false,
 
         /*
          * Whether or not the users email can be changed on the edit profile screen
@@ -104,6 +104,6 @@ return [
         /*
          * Whether the registration captcha is on or off
          */
-        'registration' => env('REGISTRATION_CAPTCHA_STATUS', true),
+        'registration' => env('REGISTRATION_CAPTCHA_STATUS', false),
     ],
 ];
