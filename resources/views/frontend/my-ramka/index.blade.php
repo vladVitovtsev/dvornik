@@ -473,7 +473,7 @@
 <div id="contacts" class="contacts section row">
     <div class="container">
         <!-- row -->
-        @include('frontend.includes.contact')
+        {{--@include('frontend.includes.contact')--}}
 
         <div class="text-center row">
             <div class="col-md-6 col-xs-6 col-sm-6 text-right">
@@ -495,7 +495,7 @@
 </div>
 <!-- //contacts -->
 
-<div class="back-top" id="back-top row">
+<div class="back-top row" id="back-top">
     <a href="#" class="btn btn-block btn-lg btn-danger">Наверх</a>
 </div>
 
