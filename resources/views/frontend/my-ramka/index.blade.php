@@ -61,7 +61,7 @@
             <h2 class="page-header">С этой рамкой Вы будете выделяться на дороге<br>
             </h2>
             <div class="col-md-8">
-                <div class="main-img"><img src="/img/frontend/my-ramka/rcs_main3.png"
+                <div class="main-img"><img src="img/frontend/my-ramka/rcs_main3.png"
                                            class="img-responsive" alt=""></div>
             </div>
             <div class="col-md-4 col-xs-12">
@@ -93,7 +93,7 @@
             <h2>Преимущества</h2>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="public/img/frontend/my-ramka/adv1.png" alt="">
+                    <img src="img/frontend/my-ramka/adv1.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>УДОБНАЯ</span><br>
@@ -104,7 +104,7 @@
             </div>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="/img/frontend/my-ramka/adv2.png" alt="">
+                    <img src="img/frontend/my-ramka/adv2.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>ТОНКАЯ</span><br>
@@ -117,7 +117,7 @@
         <div class="row">
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="/img/frontend/my-ramka/adv3.png" alt="">
+                    <img src="img/frontend/my-ramka/adv3.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>АНТИВАНДАЛЬНАЯ</span><br>
@@ -128,7 +128,7 @@
             </div>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="/img/frontend/my-ramka/adv4.png" alt="">
+                    <img src="img/frontend/my-ramka/adv4.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>БЕЗ РЕКЛАМЫ</span><br>
@@ -141,7 +141,7 @@
         <div class="row">
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="/img/frontend/my-ramka/adv5.png" alt="">
+                    <img src="img/frontend/my-ramka/adv5.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>ЦВЕТНАЯ</span><br>
@@ -152,7 +152,7 @@
             </div>
             <div class="col-md-6">
                 <p class="img col-xs-12 text-center">
-                    <img src="/img/frontend/my-ramka/adv6.png" alt="">
+                    <img src="img/frontend/my-ramka/adv6.png" alt="">
                 </p>
                 <p class="description col-xs-12 text-center">
                     <span>НАДЕЖНАЯ</span><br>
@@ -173,13 +173,13 @@
             <h2>Скриншоты</h2>
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="/img/frontend/my-ramka/scr1.jpg"
+                    <div class="text-center"><img src="img/frontend/my-ramka/scr1.jpg"
                                                   alt=""></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="/img/frontend/my-ramka/scr3.jpg"
+                    <div class="text-center"><img src="img/frontend/my-ramka/scr3.jpg"
                                                   alt=""></div>
                 </div>
             </div>
@@ -187,13 +187,13 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="/img/frontend/my-ramka/scr4.jpg"
+                    <div class="text-center"><img src="img/frontend/my-ramka/scr4.jpg"
                                                   alt=""></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="media">
-                    <div class="text-center"><img src="/img/frontend/my-ramka/scr6.jpg"
+                    <div class="text-center"><img src="img/frontend/my-ramka/scr6.jpg"
                                                   alt=""></div>
                 </div>
             </div>
@@ -211,7 +211,7 @@
             <h2>Отзывы</h2>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="/img/frontend/my-ramka/ava1.jpg"
+                    <div class="pull-left ava"><img src="img/frontend/my-ramka/ava1.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -226,7 +226,7 @@
 
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="/img/frontend/my-ramka/ava2.jpg"
+                    <div class="pull-left ava"><img src="img/frontend/my-ramka/ava2.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -244,7 +244,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="/img/frontend/my-ramka/ava2.jpg"
+                    <div class="pull-left ava"><img src="img/frontend/my-ramka/ava2.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -259,7 +259,7 @@
             </div>
             <div class="col-md-6">
                 <div class="review-item">
-                    <div class="pull-left ava"><img src="/img/frontend/my-ramka/ava1.jpg"
+                    <div class="pull-left ava"><img src="img/frontend/my-ramka/ava1.jpg"
                                                     alt=""></div>
                     <div class="review-body">
                         <blockquote>
@@ -295,17 +295,17 @@
                     <div class="body">
                         <div class="wrp">
                             <ul class="bxslider-avto">
-                                <li><img src="/img/frontend/my-ramka/ramka_white.png" alt="">
+                                <li><img src="img/frontend/my-ramka/ramka_white.png" alt="">
                                 </li>
-                                <li><img src="/img/frontend/my-ramka/ramka_black.png" alt="">
+                                <li><img src="img/frontend/my-ramka/ramka_black.png" alt="">
                                 </li>
-                                <li><img src="/img/frontend/my-ramka/ramka_blue.png" alt="">
+                                <li><img src="img/frontend/my-ramka/ramka_blue.png" alt="">
                                 </li>
-                                <li><img src="/img/frontend/my-ramka/ramka_red.png" alt="">
+                                <li><img src="img/frontend/my-ramka/ramka_red.png" alt="">
                                 </li>
-                                <li><img src="/img/frontend/my-ramka/ramka_yellow.png" alt="">
+                                <li><img src="img/frontend/my-ramka/ramka_yellow.png" alt="">
                                 </li>
-                                <li><img src="/img/frontend/my-ramka/ramka_gray.png" alt="">
+                                <li><img src="img/frontend/my-ramka/ramka_gray.png" alt="">
                                 </li>
                             </ul>
                             <ul>
@@ -332,7 +332,7 @@
                     </div>
                     <div class="body">
                         <div class="wrp">
-                            <img src="/img/frontend/my-ramka/ramka_light.png" alt="">
+                            <img src="img/frontend/my-ramka/ramka_light.png" alt="">
                             </ul>
                             <ul>
                                 <li class="title">Новинка от RCS</li>
@@ -358,7 +358,7 @@
                     </div>
                     <div class="body">
                         <div class="wrp">
-                            <img src="/img/frontend/my-ramka/magnit.png" alt="">
+                            <img src="img/frontend/my-ramka/magnit.png" alt="">
                             <ul>
                                 <li class="title">Удобнее не придумать!</li>
                                 <li>Забудьте о долгом снятие номера, спите спокойно. Ваш номер будет в безопасности.</li>
@@ -381,7 +381,7 @@
                     </div>
                     <div class="body">
                         <div class="wrp">
-                            <img src="/img/frontend/my-ramka/vint.png" alt="">
+                            <img src="img/frontend/my-ramka/vint.png" alt="">
                             <ul>
                                 <li class="title">Все под рукой!</li>
                                 <li>
