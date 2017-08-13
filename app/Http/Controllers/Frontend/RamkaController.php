@@ -12,8 +12,9 @@ class RamkaController extends Controller
         return view('frontend.my-ramka.index');
     }
 
-    public function buy()
+    public function buy(Request $request)
     {
-        dd(12);
+        $input = $request->input();
+        dd($input);
     }
 }

@@ -148,14 +148,14 @@ return [
         ],
         'frontend'  => [
             'email'                     => 'E-mail',
-            'name'                      => 'Логин',
+            'name'                      => 'Имя',
             'new_password'              => 'Новый пароль',
             'new_password_confirmation' => 'Подтверждение нового пароля',
             'old_password'              => 'Старый пароль',
             'password'                  => 'Пароль',
             'password_confirmation'     => 'Подтверждение пароля',
-            'phone' => 'Phone',
-            'message' => 'Message',
+            'phone'                     => 'Телефон',
+            'message'                   => 'Ваш вопрос',
         ],
     ],
 ];

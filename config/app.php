@@ -101,7 +101,7 @@ return [
     | by the Carbon library when setting Carbon's localization.
     |
     */
-    'locale_php' => env('APP_LOCALE_PHP', 'ru_RUS'),
+    'locale_php' => env('APP_LOCALE_PHP', 'ru'),
 
     /*
     |--------------------------------------------------------------------------

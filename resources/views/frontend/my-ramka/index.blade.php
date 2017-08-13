@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Рамка RCS" content="">
-    <meta name="Vlad_ViV" content="">
-    <title>Рамки RCS</title>
+@extends('frontend.layouts.app')
 
+@section('after-styles')
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -28,15 +21,16 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="icon" href="{{!App::environment('local')?'/public':''}}/img/frontend/my-ramka/favicon.png">
-</head>
-<body>
+@endsection
+
+@section('content')
 
 <a href="/test">Специально для техподдержки</a>
 <!-- ***Page Preloader*** -->
 {{--<div id="page-preloader"><span class="spinner"></span></div>--}}
 
 <!-- ***PRESENTATION*** -->
-<section id="presentation" class="presentation section">
+<div id="presentation" class="presentation section row">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12">
@@ -57,11 +51,11 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- //presentation -->
 
 <!-- ***ABOUT*** -->
-<section id="about" class="about section">
+<div id="about" class="about section row">
     <div class="container">
         <!-- row -->
         <div class="row">
@@ -89,11 +83,11 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- //about -->
 
 <!-- ***PLUSES*** -->
-<section id="pluses" class="pluses section">
+<div id="pluses" class="pluses section row">
     <div class="container">
         <!-- row -->
         <div class="row">
@@ -169,11 +163,11 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- //pluses -->
 
 <!-- ***SCRINSHOTS*** -->
-<section id="scrinshots" class="scrinshots section">
+<div id="scrinshots" class="scrinshots section row">
     <div class="container">
         <!-- row -->
         <div class="row">
@@ -207,11 +201,11 @@
         </div>
 
     </div>
-</section>
+</div>
 <!-- //scrinshots -->
 
 <!-- ***REVIEWS*** -->
-<section id="reviews" class="reviews section">
+<div id="reviews" class="reviews section row">
     <div class="container">
         <!-- row -->
         <div class="row">
@@ -281,11 +275,11 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- //reviews -->
 
 <!-- ***BUY IT NOW*** -->
-<section id="buy" class="buy section">
+<div id="buy" class="buy section row">
     <div class="container">
         <!-- row -->
         <div class="row">
@@ -450,11 +444,11 @@
             {{--</div>--}}
         </div>
     </div>
-</section>
+</div>
 <!-- //buy it now -->
 
 <!-- ***SUBSCRIBE*** -->
-<section id="subscribe" class="subscribe section">
+<div id="subscribe" class="subscribe section row">
     <div class="container">
         <!-- row -->
         <div class="text-center row">
@@ -472,62 +466,41 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- //subscribe -->
 
 <!-- ***CONTACTS*** -->
-<section id="contacts" class="contacts section">
+<div id="contacts" class="contacts section row">
     <div class="container">
         <!-- row -->
+        @include('frontend.includes.contact')
+
         <div class="text-center row">
-            <h2>Контакты</h2>
-            <p class="lead">Если у вас возникли вопросы, то вы сможете задать их, заполнив форму ниже, или
-                воспользовавшись контактами ниже.</p>
-            <div class="col-md-6 col-md-offset-3 col-xs-12 col-sm-12">
-                <!-- Contacts form -->
-                <form role="form" class="contacts-form">
-                    <div class="form-group">
-                        <input id="name" class="form-control" placeholder="Ваше имя:">
-                    </div>
-                    <div class="form-group">
-                        <input id="email" class="form-control email-mask" placeholder="Ваш email:">
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" class="form-control" rows="5" placeholder="Ваше сообщение:"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button id="btn" class="btn btn-default">Отправить</button>
-                    </div>
-                </form>
-                <br>
-                <!-- Address -->
-            {{--<div class="col-md-6 col-xs-6 col-sm-6 text-right">--}}
-            {{--<address>--}}
-            {{--<strong>Адрес:</strong><br>--}}
-            {{--Москва<br>--}}
-            {{--<abbr title="Телефон">Т:</abbr> +7 (913) 333-3308--}}
-            {{--</address>--}}
-            {{--</div>--}}
-            <!-- Contacts -->
-                <div class=" col-xs-12 text-center">
-                    <address>
-                        <strong>Другие контакты:</strong><br>
-                        <abbr title="Email">E:</abbr> <a href="mailto:#">support@my-ramka.ru</a><br>
-                        {{--<abbr title="Skype">S:</abbr> <a href="skype:#">login_skype</a><br>--}}
-                    </address>
-                </div>
+            <div class="col-md-6 col-xs-6 col-sm-6 text-right">
+                <address>
+                    <strong>Адрес:</strong><br>
+                    Москва<br>
+                    <abbr title="Телефон">Т:</abbr> +7 (913) 333-3308
+                </address>
+            </div>
+            <div class="col-md-6 col-xs-6 col-sm-6 text-left">
+                <address>
+                    <strong>Другие контакты:</strong><br>
+                    <abbr title="Email">E:</abbr> <a href="mailto:#">support@my-ramka.ru</a><br>
+                    <abbr title="Skype">S:</abbr> <a href="skype:#">login_skype</a><br>
+                </address>
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- //contacts -->
 
-<div class="back-top" id="back-top">
+<div class="back-top" id="back-top row">
     <a href="#" class="btn btn-block btn-lg btn-danger">Наверх</a>
 </div>
 
 <!-- ***FOOTER*** -->
-<footer class="footer">
+<div class="footer row">
     <div class="container">
         <!-- row -->
         <div class="row text-center">
@@ -546,7 +519,7 @@
             </div>
         </div>
     </div>
-</footer>
+</div>
 <!-- //footer -->
 
 <!-- ***MODAL*** -->
@@ -558,9 +531,9 @@
                 </button>
                 <h4 class="modal-title" id="myModalLabel">Корзина</h4>
             </div>
-            <form class="form-horizontal" method="post" action="">
+            {{ Form::open(['route' => 'frontend.ramka.buy', 'class' => 'form-horizontal']) }}
                 {{ csrf_field() }}
-                <input type="hidden" name="recipient" value="">
+                <input type="hidden" name="recipient" class="recipient" value="">
                 <div class="modal-body">
                     <div class="order">
                         Ваш заказ:
@@ -588,26 +561,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="fio">
-                        <div class="form-group">
-                            <label for="lastName" class="col-sm-2 control-label">Фамилия</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" name="lastName" id="lastName" placeholder="Фамилия" required>
+                    @if(!$logged_in_user)
+                        <div class="fio">
+                            <div class="form-group">
+                                <label for="lastName" class="col-sm-2 control-label">Фамилия</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" name="lastName" id="lastName" placeholder="Фамилия" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName" class="col-sm-2 control-label">Имя</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control" name="firstName" id="firstName" placeholder="Имя" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="col-sm-2 control-label">Телефон</label>
+                                <div class="col-sm-10">
+                                    <input class="form-control phone-mask" name="phone" id="phone" placeholder="Телефон" required>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="firstName" class="col-sm-2 control-label">Имя</label>
-                            <div class="col-sm-10">
-                                <input class="form-control" name="firstName" id="firstName" placeholder="Имя" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone" class="col-sm-2 control-label">Телефон</label>
-                            <div class="col-sm-10">
-                                <input class="form-control phone-mask" name="phone" id="phone" placeholder="Телефон" required>
-                            </div>
-                        </div>
-                    </div>
+                    @else
+                        <input type="hidden" name="id" value="{{ $logged_in_user->id }}">
+                    @endif
 
                 </div>
                 <div class="modal-footer">
@@ -615,11 +592,16 @@
                     <span class="price"></span><i class="fa fa-rub"></i>
                     <button class="btn btn-primary">Отправить заказ</button>
                 </div>
-            </form>
+            {{ Form::close() }}
+
         </div>
     </div>
 </div>
 <!-- //modal -->
+
+@endsection
+
+@section('after-scripts')
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src=" https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -649,5 +631,4 @@
 <!--[if !IE]>-->
 <script src="{{!App::environment('local')?'/public':''}}/js/frontend/animate.js"></script>
 <!--<![endif]-->
-</body>
-</html>
+@endsection

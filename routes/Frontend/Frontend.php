@@ -11,7 +11,7 @@ Route::post('contact/send', 'ContactController@send')->name('contact.send');
 
 
 Route::get('/', 'RamkaController@index')->name('index');
-Route::post('/ramka/buy', ['as' => 'ramka.buy', 'uses' => 'RamkaController@Buy']);
+Route::post('/ramka/buy', 'RamkaController@Buy')->name('ramka.buy');
 
 /*
  * These frontend controllers require the user to be logged in
