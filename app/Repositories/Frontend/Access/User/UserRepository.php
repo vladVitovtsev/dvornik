@@ -106,6 +106,7 @@ class UserRepository extends BaseRepository
         $user->first_name = $data['first_name'];
         $user->last_name = $data['last_name'];
         $user->email = $data['email'];
+        $user->phone = $data['phone'];
         $user->confirmation_code = md5(uniqid(mt_rand(), true));
         $user->status = 1;
         $user->password = $provider ? null : bcrypt($data['password']);
