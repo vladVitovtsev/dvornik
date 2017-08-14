@@ -33,12 +33,16 @@
                     <tr>
                         <td>{{ $order->products }} {{ $order->color }}</td>
                         <td>{{ $order->count }}</td>
-                        <td>{{ $order->user->last_name }}</td>
+                        <td>
+                            {{ $order->user->first_name }}
+                            {{ $order->user->last_name }}
+                        </td>
                         <td>{{ $order->user->phone }}</td>
                         <td>{{ $order->created_at }}</td>
                     </tr>
                 @endforeach
             </table>
+            {{ $orders->links() }}
         </div><!-- /.box-body -->
     </div><!--box box-success-->
 @endsection
